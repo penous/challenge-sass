@@ -1,4 +1,13 @@
 $blue-text: #2748B3;
-$blue-bg: darken($blue-text, 75%);
+$blue-bg: darken($blue-text, 38%);
 $red-text: #b32727;
-$red-bg: darken($red-text, 75%);
+$red-bg: darken($red-text, 38%);
+
+$primary-text: $blue-text;
+$primary-bg: $blue-bg;
+
+@function change($color){
+  $primary-text: $color+"-text";
+  $primary-bg: $color+"-bg";
+   @return $color+"-text";
+}
